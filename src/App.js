@@ -1,19 +1,20 @@
 import './scss/app.scss'
+import {
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Homepage from './pages/Homepage';
+import Aboutpage from './pages/Aboutpage';
+
 
 function App() {
   return (
-    <div className="container">
-      <Header name = "yarmolchik-nazar" />
-
-      <div className="main">
-        <h1>dsdsdsd</h1>
-      </div>
-
-      <Footer/>
-    </div>
+    <Routes>
+      <Route path='/' element={<Homepage/>}/>
+      <Route path='/about' element={<Aboutpage/>}/>
+    </Routes>
   );
 }
 

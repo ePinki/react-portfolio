@@ -1,15 +1,20 @@
 import React from 'react';
+import {
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 
-function Header(props) {
+function Header({name}) {
   return (
     <div className="header__wrapper">
       <div className="header__name">
-        <h1>{props.name}</h1>
+        <h1>{name}</h1>
       </div>
       
       <div className="header__nav-left">
-        <button className='header__nav-item header__nav-item--active'>_hello</button>
-        <button className='header__nav-item'>_about-me</button>
+        <Link to='/' className='header__nav-item header__nav-item--active'>_hello</Link>
+        <Link to='/about' className='header__nav-item'>_about-me</Link>
         <button className='header__nav-item'>_projects</button>
       </div>
 
