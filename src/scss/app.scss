@@ -1,0 +1,19 @@
+@import './libs/normalize.scss';
+
+@import './components/all.scss';
+
+
+body {
+  background-color: #011627;
+  font-family: 'Fira Code', monospace;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.container {
+  min-height: 935px;
+  display: flex;
+  flex-direction: column;
+}

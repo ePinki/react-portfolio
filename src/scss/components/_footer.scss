@@ -1,0 +1,14 @@
+.footer {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    display: flex;
+  }
+
+  &__right {
+    display: flex;
+  }
+}
