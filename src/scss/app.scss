@@ -17,3 +17,10 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+p, a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #607B96;
+}

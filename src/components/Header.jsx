@@ -15,7 +15,7 @@ function Header({name}) {
       <div className="header__nav-left">
         <Link to='/' className='header__nav-item header__nav-item--active'>_hello</Link>
         <Link to='/about' className='header__nav-item'>_about-me</Link>
-        <button className='header__nav-item'>_projects</button>
+        <Link to='/projects' className='header__nav-item'>_projects</Link>
       </div>
 
       <div className="header__nav-right">
